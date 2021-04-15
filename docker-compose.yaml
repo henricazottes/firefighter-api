@@ -35,6 +35,9 @@ services:
       - type: bind
         source: ./src/db/setup.sql
         target: /docker-entrypoint-initdb.d/data.sql
+      - type: bind
+        source: ./src/db/custom.cnf
+        target: /etc/mysql/conf.d/custom.cnf
 
   adminer:
     image: adminer

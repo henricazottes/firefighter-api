@@ -1,10 +1,11 @@
-# Firefighter API
+#  🔥 Firefighter API
 
 Welcome to the Firefighter API documentation.
 
 - Demo available here https://firefighter-front.herokuapp.com/
 - API endpoint here https://firefighter-api.herokuapp.com/
 
+*Note: Heroku VMs need some time to wake up...*
 ## Setup
 
 ### Docker
@@ -62,7 +63,7 @@ NB: gradle is run in watch mode, which will reload automatically the server when
 
 ## Usage
 
-Two routes are availables:
+Two routes are available:
 
 - `POST /firefighter/new`
   Returns the current firefighter for the day.

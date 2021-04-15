@@ -2,6 +2,9 @@
 
 Welcome to the Firefighter API documentation.
 
+- Demo available here https://firefighter-front.herokuapp.com/
+- API endpoint here https://firefighter-api.herokuapp.com/
+
 ## Setup
 
 ### Docker

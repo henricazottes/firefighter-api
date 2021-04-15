@@ -25,3 +25,6 @@ setup-database:
 build:
 	./gradlew build
 	docker build --build-arg JAR_FILE=build/libs/\*.jar -t henricazottes/firefighter-api .
+
+up:
+	docker-compose up

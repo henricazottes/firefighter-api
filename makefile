@@ -21,3 +21,7 @@ setup-database:
 	mysql -e "GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'localhost';"
 	mysql -e "FLUSH PRIVILEGES;"
 	mysql -D ${DB_NAME} < ./src/db/setup.sql
+
+build:
+	./gradlew build
+	docker build --build-arg JAR_FILE=build/libs/\*.jar -t henricazottes/firefighter-api .
